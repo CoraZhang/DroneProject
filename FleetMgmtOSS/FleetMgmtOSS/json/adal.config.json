@@ -1,0 +1,10 @@
+ 
+{
+    "httpSAS": "SharedAccessSignature sr=https%3a%2f%2fiotabusinesslab.servicebus.windows.net%2fdatacollectoroutbox%2fpublishers%2fcbb4fa1d-7670-4c57-a94e-e7fb0d1bcfdf%2fmessages&sig=01WDChPcoBfTD3feVYTYtbB%2bgE1RiYZBR376EvDPVEw%3d&se=4696953458&skn=SendAccessPolicy",
+    "gatewayId": "cbb4fa1d-7670-4c57-a94e-e7fb0d1bcfdf",
+    "POSTurlBase": "https://iotabusinesslab.servicebus.windows.net/datacollectoroutbox/publishers/",
+    "POSTurlEXT": "/messages",
+    "AccessToken": "Basic NWUxNDNmYzMtMzMyNi00OTFiLWFlZjYtOTQ5M2U2N2Y1YzYyQDRjMDVjYTkxLWM0NTYtNGM5Ny1iYmQwLTljYzExZTk0NDNiMTp3VjZjbUNHRkVScFdtN1VG",
+    "deviceNetworkId": "9d8a90f7-06f6-430a-9389-b7098e65c099",
+    "GETurlBase": "https://lab.api.iot-accelerator.ericsson.net/ddm/api/v3/resources/"
+}

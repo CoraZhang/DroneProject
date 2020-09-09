@@ -1,0 +1,142 @@
+==============================================================================
+fleetsim.pl v1.01a
+Command line: -offline
+Run Date/Time: 2018-09-25 19:26:31
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Expo Houten Netherlands; Lat: 52.03838; Long: 5.14069
+Resetting all trucks...
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Simulation starts in:
+5 seconds...
+4 seconds...
+3 seconds...
+2 seconds...
+1 seconds...
+4 Trucks are on the way!
+Truck data will update every 5 seconds for a maximum of 3600 seconds (~720 samples/truck)...
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03838,5.14069; Accident=0; Door=0; TempC=20.0
+Truck : 52.03738,5.14053; Accident=0; Door=0; TempC=20.0
+Truck : 52.04098,5.14141; Accident=0; Door=0; TempC=20.3
+Truck : 52.03738,5.14053; Accident=0; Door=0; TempC=20.0
+Truck : 52.03738,5.14053; Accident=0; Door=0; TempC=20.0
+Truck : 52.03653,5.14115; Accident=0; Door=0; TempC=20.0
+Truck : 52.04223,5.14175; Accident=0; Door=0; TempC=20.3
+Truck : 52.03653,5.14115; Accident=0; Door=0; TempC=20.7
+Truck : 52.03653,5.14115; Accident=0; Door=0; TempC=20.0
+Truck : 52.03622,5.14288; Accident=0; Door=0; TempC=20.0
+Truck : 52.04216,5.14324; Accident=0; Door=0; TempC=20.3
+Truck : 52.03622,5.14288; Accident=0; Door=0; TempC=20.7
+Truck : 52.03622,5.14288; Accident=0; Door=0; TempC=20.0
+Truck : 52.03586,5.14447; Accident=0; Door=0; TempC=20.0
+Truck : 52.04078,5.14578; Accident=0; Door=0; TempC=20.3
+Truck : 52.03586,5.14447; Accident=0; Door=0; TempC=20.7
+Truck : 52.03586,5.14447; Accident=0; Door=0; TempC=20.0
+Truck : 52.03460,5.14393; Accident=0; Door=0; TempC=20.0
+Truck : 52.04142,5.14712; Accident=0; Door=0; TempC=20.3
+Truck : 52.03460,5.14393; Accident=0; Door=0; TempC=20.7
+Truck : 52.03460,5.14393; Accident=0; Door=0; TempC=19.9
+Truck : 52.03312,5.14279; Accident=0; Door=0; TempC=20.0
+Truck : 52.04249,5.14650; Accident=0; Door=0; TempC=20.3
+Truck : 52.03312,5.14279; Accident=0; Door=0; TempC=20.7
+Truck : 52.03374,5.14335; Accident=0; Door=0; TempC=20.5
+Truck : 52.03230,5.14213; Accident=0; Door=0; TempC=20.0
+Truck : 52.04316,5.14533; Accident=0; Door=0; TempC=20.3
+Truck : 52.03230,5.14213; Accident=0; Door=0; TempC=20.7
+Truck : 52.03266,5.14236; Accident=0; Door=0; TempC=19.9
+Truck : 52.03117,5.14207; Accident=0; Door=0; TempC=20.0
+Truck : 52.04352,5.14449; Accident=0; Door=0; TempC=21.2
+Truck : 52.03096,5.14217; Accident=0; Door=0; TempC=20.2
+Truck : 52.03160,5.14199; Accident=0; Door=0; TempC=19.9
+Truck : 52.03023,5.14284; Accident=0; Door=0; TempC=20.0
+Truck : 52.04382,5.14304; Accident=0; Door=0; TempC=20.5
+Truck : 52.02995,5.14328; Accident=0; Door=0; TempC=20.2
+Truck : 52.03051,5.14251; Accident=0; Door=0; TempC=19.9
+Truck : 52.02970,5.14374; Accident=0; Door=0; TempC=20.0
+Truck : 52.04382,5.14203; Accident=0; Door=0; TempC=20.5
+Truck : 52.02934,5.14451; Accident=0; Door=0; TempC=21.2
+Truck : 52.02995,5.14328; Accident=0; Door=0; TempC=20.1
+Truck : 52.02913,5.14498; Accident=0; Door=0; TempC=20.0
+Truck : 52.04371,5.14096; Accident=0; Door=0; TempC=20.5
+Truck : 52.02813,5.14708; Accident=0; Door=0; TempC=21.2
+Truck : 52.02934,5.14451; Accident=0; Door=0; TempC=20.1
+Truck : 52.02813,5.14708; Accident=0; Door=0; TempC=20.0
+Truck : 52.04355,5.13846; Accident=0; Door=0; TempC=20.5
+Truck : 52.02721,5.14821; Accident=0; Door=0; TempC=21.2
+Truck : 52.02828,5.14681; Accident=0; Door=0; TempC=20.1
+Truck : 52.02721,5.14821; Accident=0; Door=0; TempC=20.0
+Truck : 52.04358,5.13571; Accident=0; Door=0; TempC=20.5
+Truck : 52.02626,5.14926; Accident=0; Door=0; TempC=21.2
+Truck : 52.02772,5.14764; Accident=0; Door=0; TempC=20.1
+Truck : 52.02626,5.14926; Accident=0; Door=0; TempC=20.0
+Truck : 52.04381,5.13284; Accident=0; Door=0; TempC=20.5
+Truck : 52.02557,5.14752; Accident=0; Door=0; TempC=21.2
+Truck : 52.02676,5.14871; Accident=0; Door=0; TempC=20.9
+Truck : 52.02557,5.14752; Accident=0; Door=0; TempC=20.0
+Truck : 52.04419,5.13030; Accident=0; Door=0; TempC=20.5
+Truck : 52.02525,5.14615; Accident=0; Door=0; TempC=21.5
+Truck : 52.02557,5.14752; Accident=0; Door=0; TempC=20.9
+Truck : 52.02525,5.14615; Accident=0; Door=0; TempC=20.0
+Truck : 52.04444,5.12915; Accident=0; Door=0; TempC=20.5
+Truck : 52.02447,5.14115; Accident=0; Door=0; TempC=21.5
+Truck : 52.02525,5.14615; Accident=0; Door=0; TempC=20.9
+Truck : 52.02447,5.14115; Accident=0; Door=0; TempC=20.0
+Truck : 52.04500,5.12628; Accident=0; Door=0; TempC=20.5
+Truck : 52.02432,5.13853; Accident=0; Door=0; TempC=21.5
+Truck : 52.02447,5.14115; Accident=0; Door=0; TempC=20.9
+Truck : 52.02436,5.14001; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.7
+Truck : 52.02442,5.13691; Accident=0; Door=0; TempC=21.5
+Truck : 52.02436,5.14001; Accident=0; Door=0; TempC=20.9
+Truck : 52.02432,5.13853; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.7
+Truck : 52.02463,5.13548; Accident=1; Door=0; TempC=21.7
+Truck : 52.02432,5.13853; Accident=0; Door=0; TempC=20.9
+Truck : 52.02442,5.13691; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.2
+Truck : 52.02463,5.13548; Accident=1; Door=1; TempC=21.8
+Truck : 52.02442,5.13691; Accident=0; Door=0; TempC=20.9
+Truck : 52.02463,5.13548; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.1
+Truck : 52.02463,5.13548; Accident=1; Door=1; TempC=21.9
+Truck : 52.02463,5.13548; Accident=0; Door=0; TempC=20.0
+Truck : 52.02503,5.13383; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.1
+Truck : 52.02463,5.13548; Accident=1; Door=1; TempC=22.0
+Truck : 52.02488,5.13437; Accident=0; Door=0; TempC=20.0
+Truck : 52.02539,5.13281; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.1
+Truck : 52.02463,5.13548; Accident=1; Door=1; TempC=22.1
+Truck : 52.02552,5.13356; Accident=0; Door=0; TempC=20.0
+Truck : 52.02595,5.13143; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.1
+Truck : 52.02463,5.13548; Accident=1; Door=1; TempC=22.2
+Truck : 52.02627,5.13426; Accident=0; Door=0; TempC=20.0
+Truck : 52.02680,5.12998; Accident=0; Door=0; TempC=19.2
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.1
+Truck : 52.02463,5.13548; Accident=1; Door=1; TempC=22.3
+Truck : 52.02706,5.13507; Accident=0; Door=0; TempC=20.0
+Truck : 52.02763,5.12945; Accident=0; Door=0; TempC=19.4
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=20.1
+Truck : 52.02463,5.13548; Accident=1; Door=0; TempC=22.3
+Truck : 52.02830,5.13618; Accident=0; Door=0; TempC=20.0
+Truck : 52.02882,5.13066; Accident=0; Door=0; TempC=19.4
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=19.8
+Truck : 52.02463,5.13548; Accident=1; Door=0; TempC=21.5
+Truck : 52.02912,5.13658; Accident=0; Door=0; TempC=20.0
+Truck : 52.02952,5.13146; Accident=0; Door=0; TempC=19.4
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=19.8
+Truck : 52.02463,5.13548; Accident=1; Door=0; TempC=21.7
+Truck : 52.03012,5.13631; Accident=0; Door=0; TempC=20.0
+Truck : 52.03037,5.13259; Accident=0; Door=0; TempC=19.4
+Truck : 52.04535,5.12419; Accident=1; Door=0; TempC=19.8
+Truck : 52.02463,5.13548; Accident=1; Door=0; TempC=21.7
+Truck : 52.03114,5.13611; Accident=0; Door=0; TempC=20.0
+Warning: User typed Ctrl-C.  Exiting.

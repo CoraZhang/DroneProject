@@ -1,0 +1,47 @@
+#map_div { height: 879px; }
+.red { color: red; font-weight: bold; }
+.blue { color: blue; font-weight: bold; }
+
+.teletab {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 7px;
+  width: 100%;
+}
+
+.telemetrics {
+  border: 1px solid grey;
+  color: grey;
+  text-align: center;
+}
+
+.vlabel {
+  border: none;
+  background-color: lightgrey;
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.vdata {
+  border: none;
+  background-color: lightgrey;
+  color: grey;
+  font-weight: normal;
+  padding-right: 10px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.title {
+ color: grey;
+}
+
+.paneltitle {
+ font-family: "Ericsson Capital TT", Arial, sans-serif;
+ font-size: 12pt;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+

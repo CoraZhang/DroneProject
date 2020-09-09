@@ -1,0 +1,60 @@
+==============================================================================
+fleetsimOSS.pl v2.00a
+Command line: online
+Run Date/Time: 2019-04-08 14:50:49
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Quidi Vidi Brewery; Lat: 47.58136; Long: -52.67638
+Resetting all trucks...
+[2019-04-08 14:50:49] Truck 0: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:50:49] Truck 1: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:50:49] Truck 2: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:50:49] Truck 3: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Reading sensor config file...
+Reading AppIoT config file...
+Logging in to AppIoT gateway cbb4fa1d-7670-4c57-a94e-e7fb0d1bcfdf
+Simulation starts in:
+5 seconds...
+4 seconds...
+3 seconds...
+2 seconds...
+1 seconds...
+4 Trucks are on the way!
+Truck data will update every 5 seconds for a maximum of 3600 seconds (~720 samples/truck)...
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+[2019-04-08 14:50:59] Truck 0: 47.58136,-52.67638; Accident=0; Door=0; TempC=0
+[2019-04-08 14:50:59] Truck 1: 47.58136,-52.67638; Accident=0; Door=0; TempC=21.0
+[2019-04-08 14:50:59] Truck 2: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:50:59] Truck 3: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.4
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+[2019-04-08 14:51:04] Truck 0: 47.58163,-52.67781; Accident=0; Door=0; TempC=0
+[2019-04-08 14:51:04] Truck 1: 47.58163,-52.67781; Accident=0; Door=0; TempC=21.0
+[2019-04-08 14:51:04] Truck 2: 47.58146,-52.67653; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:51:04] Truck 3: 47.58146,-52.67653; Accident=0; Door=0; TempC=21.2
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+[2019-04-08 14:51:09] Truck 0: 47.58158,-52.67874; Accident=0; Door=0; TempC=0
+[2019-04-08 14:51:09] Truck 1: 47.58158,-52.67874; Accident=0; Door=0; TempC=21.0
+[2019-04-08 14:51:09] Truck 2: 47.58155,-52.67675; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:51:09] Truck 3: 47.58155,-52.67675; Accident=0; Door=0; TempC=21.2
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+[2019-04-08 14:51:14] Truck 0: 47.58312,-52.67874; Accident=0; Door=0; TempC=0
+[2019-04-08 14:51:14] Truck 1: 47.58135,-52.67971; Accident=0; Door=0; TempC=21.0
+[2019-04-08 14:51:14] Truck 2: 47.58160,-52.67696; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:51:14] Truck 3: 47.58160,-52.67696; Accident=0; Door=0; TempC=21.2
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+[2019-04-08 14:51:19] Truck 0: 47.58449,-52.68034; Accident=0; Door=0; TempC=0
+[2019-04-08 14:51:19] Truck 1: 47.58133,-52.68071; Accident=0; Door=0; TempC=21.0
+[2019-04-08 14:51:19] Truck 2: 47.58161,-52.67717; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:51:19] Truck 3: 47.58161,-52.67717; Accident=0; Door=0; TempC=21.2
+Warning: User typed Ctrl-C.  Exiting.

@@ -1,0 +1,30 @@
+==============================================================================
+fleetsimOSS.pl v2.00a
+Command line: -offline
+Run Date/Time: 2018-10-12 16:06:15
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Quidi Vidi Brewery; Lat: 47.58136; Long: -52.67638
+Resetting all trucks...
+[2018-10-12 16:06:15] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:15] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:15] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:15] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Simulation starts in:
+5 seconds...
+4 seconds...
+3 seconds...
+2 seconds...
+1 seconds...
+4 Trucks are on the way!
+Truck data will update every 5 seconds for a maximum of 3600 seconds (~720 samples/truck)...
+[2018-10-12 16:06:25] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:25] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=19.5
+[2018-10-12 16:06:25] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:25] Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:30] Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:30] Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=19.5
+[2018-10-12 16:06:30] Truck : 47.58146,-52.67653; Accident=0; Door=0; TempC=20.0
+[2018-10-12 16:06:30] Truck : 47.58146,-52.67653; Accident=0; Door=0; TempC=20.0
+Warning: User typed Ctrl-C.  Exiting.

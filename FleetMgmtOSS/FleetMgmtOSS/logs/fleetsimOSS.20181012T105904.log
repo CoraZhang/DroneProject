@@ -1,0 +1,50 @@
+==============================================================================
+fleetsimOSS.pl v2.00a
+Command line: -offline
+Run Date/Time: 2018-10-12 10:59:04
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Fish Processing Plant; Lat: 47.58136; Long: -52.67638
+Resetting all trucks...
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Simulation starts in:
+5 seconds...
+4 seconds...
+3 seconds...
+2 seconds...
+1 seconds...
+4 Trucks are on the way!
+Truck data will update every 5 seconds for a maximum of 3600 seconds (~720 samples/truck)...
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=20.0
+Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=20.0
+Truck : 47.58146,-52.67653; Accident=0; Door=0; TempC=20.0
+Truck : 47.58146,-52.67653; Accident=0; Door=0; TempC=19.1
+Truck : 47.58158,-52.67874; Accident=0; Door=0; TempC=19.4
+Truck : 47.58158,-52.67874; Accident=0; Door=0; TempC=20.0
+Truck : 47.58155,-52.67675; Accident=0; Door=0; TempC=20.0
+Truck : 47.58155,-52.67675; Accident=0; Door=0; TempC=18.1
+Truck : 47.58312,-52.67874; Accident=0; Door=0; TempC=19.4
+Truck : 47.58135,-52.67971; Accident=0; Door=0; TempC=20.0
+Truck : 47.58160,-52.67696; Accident=0; Door=0; TempC=19.4
+Truck : 47.58160,-52.67696; Accident=0; Door=0; TempC=18.1
+Truck : 47.58449,-52.68034; Accident=0; Door=0; TempC=19.4
+Truck : 47.58133,-52.68071; Accident=0; Door=0; TempC=20.0
+Truck : 47.58161,-52.67717; Accident=0; Door=0; TempC=19.4
+Truck : 47.58161,-52.67717; Accident=0; Door=0; TempC=18.8
+Truck : 47.58488,-52.68121; Accident=0; Door=0; TempC=19.4
+Truck : 47.58131,-52.68169; Accident=0; Door=0; TempC=20.6
+Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=19.4
+Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=18.8
+Truck : 47.58471,-52.68278; Accident=0; Door=0; TempC=19.4
+Truck : 47.58060,-52.68289; Accident=0; Door=0; TempC=20.6
+Truck : 47.58171,-52.67804; Accident=0; Door=0; TempC=19.3
+Truck : 47.58171,-52.67804; Accident=0; Door=0; TempC=18.8
+Warning: User typed Ctrl-C.  Exiting.

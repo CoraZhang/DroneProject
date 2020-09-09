@@ -1,0 +1,34 @@
+###############################################################################
+# File    : adal.config.json
+# Purpose : Configuration file for Data and Device Management in json format
+# Author  : Fredrik Bolzek (fredrik.bolzek@ericsson.com)
+#
+# Ericsson IoT demo
+# Fleet Management Solution
+# Copyright (c) Ericsson AB 2018
+#
+# History
+# -------
+# v1.0 2018oct06 
+# - Created for DDM integration and HTTP ingest communication with DDM.
+###############################################################################
+# Information for storing data with POST procedure 
+# ------------------------------------------------
+# 'httpSAS' is a preshared security key for your gateway. Found in DDM->Actions->Show ticket->Outbox Access Ticket
+# 'gatewayId' identifies associated gateway for your sensors.  Found in DDM->Click on Gateway and find Internal ID
+# 'POSTurl' is the url for  posting data to DDM.
+# Information to read data with GET procedure
+# -------------------------------------------
+# 'AccessToken' is a preshared security key for the whole DDM project. Found in IoT accelerator
+# 'deviceNetworkId' identifies the the whole DDM project. Found in DDM->profile icon top right->About
+# 'GETurl' is the URL for reading data.
+#
+{
+    "httpSAS": "SharedAccessSignature sr=https%3a%2f%2fiotabusinesslab.servicebus.windows.net%2fdatacollectoroutbox%2fpublishers%2fcbb4fa1d-7670-4c57-a94e-e7fb0d1bcfdf%2fmessages&sig=01WDChPcoBfTD3feVYTYtbB%2bgE1RiYZBR376EvDPVEw%3d&se=4696953458&skn=SendAccessPolicy",
+    "gatewayId": "cbb4fa1d-7670-4c57-a94e-e7fb0d1bcfdf",
+    "POSTurlBase": "https://iotabusinesslab.servicebus.windows.net/datacollectoroutbox/publishers/",
+    "POSTurlEXT": "/messages",
+    "AccessToken": "Basic NWUxNDNmYzMtMzMyNi00OTFiLWFlZjYtOTQ5M2U2N2Y1YzYyQDRjMDVjYTkxLWM0NTYtNGM5Ny1iYmQwLTljYzExZTk0NDNiMTp3VjZjbUNHRkVScFdtN1VG",
+    "deviceNetworkId": "9d8a90f7-06f6-430a-9389-b7098e65c099",
+    "GETurlBase": "https://lab.api.iot-accelerator.ericsson.net/ddm/api/v3/resources/"
+}

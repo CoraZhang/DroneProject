@@ -1,0 +1,15 @@
+==============================================================================
+fleetsimOSS.pl v2.00a
+Command line: 
+Run Date/Time: 2019-04-08 14:02:53
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Quidi Vidi Brewery; Lat: 47.58136; Long: -52.67638
+Resetting all trucks...
+[2019-04-08 14:02:53] Truck 0: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:02:53] Truck 1: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:02:53] Truck 2: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+[2019-04-08 14:02:53] Truck 3: 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Reading sensor config file...
+Warning: User typed Ctrl-C.  Exiting.

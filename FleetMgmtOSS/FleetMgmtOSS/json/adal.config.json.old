@@ -1,0 +1,12 @@
+{
+    "tenant" : "eappiotsens.onmicrosoft.com",
+    "tenantId" : "9ce64ad3-38fa-4899-8a4f-440edd76bf66",
+    "authorityHostUrl" : "https://login.microsoftonline.com",
+    "clientId" : "7c496f40-cd52-459d-8425-e8978c6577cb",
+    "clientSecret" : "Vu6bTj5TQRJ0J05PW/T+dp4r7eURhzz1iVEEtTWeyx4=",
+    "webApiResourceId" : "ed583857-c9b4-4a9a-8eff-2d44e6280e7d",
+    "username": "fredrik.bolzek@eappiotsens.onmicrosoft.com",
+    "password": "EricGarage#",
+    "deviceNetworkId": "38c5a1e0-81c5-4cae-8fd1-04e656525b73"
+}
+

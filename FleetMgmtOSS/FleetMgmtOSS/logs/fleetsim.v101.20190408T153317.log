@@ -1,0 +1,18 @@
+==============================================================================
+fleetsim.v101.pl v1.01a
+Command line: 
+Run Date/Time: 2019-04-08 15:33:17
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Quidi Vidi Brewery; Lat: 47.58136; Long: -52.67638
+Resetting all trucks...
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Reading sensor config file...
+Reading AppIoT config file...
+Logging in to AppIoT 
+FATAL ERROR: AppIoT login failed: 500: No Host option provided at C:/Perl64/lib/Net/HTTP/Methods.pm line 40.
+

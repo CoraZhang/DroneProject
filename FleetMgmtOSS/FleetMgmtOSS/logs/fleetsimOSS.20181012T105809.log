@@ -1,0 +1,8 @@
+==============================================================================
+fleetsimOSS.pl v2.00a
+Command line: -offline
+Run Date/Time: 2018-10-12 10:58:09
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Warning: Could not read route file: routes/route0.dat
+FATAL ERROR: Truck 0 MUST have a valid route0.dat file.

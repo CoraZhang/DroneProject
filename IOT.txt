@@ -1,0 +1,103 @@
+
+DDM documents
+http://docs.appiot.io/?page_id=46374
+
+Stimulator:
+https://testng.sensbysigma.com/examples/webgatewaysenml/
+
+EMAIL:
+##############################################################
+DDM configuration – Create a location.
+Go to Settings -> Location
+Click “Fleet Management” and choose “add Child”
+I have created a new Child location called Kista.
+I wanted to understand how these things were connected together and everyone else were using Malmo.
+
+Create gateway
+Go to Settings -> Hardware Types
+Choose tab Gateway Types and click +Create
+-	Enter name: TruckTestGatewayType
+-	Enter TypeID: 7020 ( any number less or equal to 2147483647 )
+
+Register Gateway to location
+Click on your location “Kista”
+Click +Register Gateway
+-	Enter serial number: 7070343 ( any number)
+-	Gateway Type: TruckTestGatewayType
+-	Click Continue
+-	Enter Gateway name: TruckTestRegisterGateway 
+-	Click Register
+
+Create sensor device type
+I have created a Temperature sensor for a test truck.
+Go to Settings -> Hardware Types -> Device Types and click +Create.
+-	Enter the name: TruckTestDeviceType 
+-	click +Add Smart Object Type. Add Temperature (3303). 
+-	Click Add followed by ?Save.
+The smart object Temperature consists of 7 resource types which then will be associated with your device:
+Name                                   ResourceID Data Type
+Max Measured Value                     5602      Float              
+Max Range Value                        5604      Float              
+Min Measured Value                     5601      Float              
+Min Range Value                        5603      Float              
+Reset Min and Max Measured Values      5605      Opaque             
+Sensor Units                           5701      Float              
+Sensor Value                           5700      Float              
+
+When you create your own sensors, you must enter the Object URN (LwM2M)
+urn:oma:lwm2m:ext:3303 
+SensorID: [Endpoint]/[ObjectID]/[InstanceID]/[ResourceID]
+3303 is the [ObjectID] in the URN used to identify the sensor when creating the http data.
+[ResourceID] is the corresponding ResourceID from above)
+[Endpoint] will be give at the device creation in the next step.
+
+"Temp_Value":"TestTruckDevice/3303/0/5700", 
+"Temp_Max":"TestTruckDevice/3303/0/5602",
+"Temp_Min":"TestTruckDevice/3303/0/5601"
+
+Create the device
+Open your Location and click +Register Device. Fill in the following fields:
+-	Name: TestTruckDevice
+-	Device Identifier (endpoint): any unique name or number (This is the [Endpoint] in the URN)
+-	Device  Type: Choose TruckTestDeviceType
+-	Gateway: TruckTestRegisterGateway
+
+##############################################################
+
+Now you will get a device with the associated device management and data management smart objects.
+Go to your Location page and click on TestTruckDevice. 
+Click the right arrow on the Temperature Smart Object to view its Resources. 
+Click Sensor Value to find the Information panel. There you can find the URL to address the sensor
+ 
+ 
+
+
+Testing:
+I took the URL for three of the resources for the temperature smart object
+"Temp_Value":"TestTruckDevice/3303/0/5700", 
+"Temp_Max":"TestTruckDevice/3303/0/5602",
+"Temp_Min":"TestTruckDevice/3303/0/5601"
+
+Gateway ID and httpSAS is found as before location->Gateway Choose Action->Show tickets
+b1f81aca-0924-49d1-a5bd-fc985740b8b0
+
+Http Service Path	datacollectoroutbox/publishers/b1f81aca-0924-49d1-a5bd-fc985740b8b0
+Http SAS	SharedAccessSignature sr=https%3a%2f%2fiotabusinesslab.servicebus.windows.net%2fdatacollectoroutbox%2fpublishers%2fb1f81aca-0924-49d1-a5bd-fc985740b8b0%2fmessages&sig=jlwPrYLo5O9Sl7NBHHEAUACFbDTe0Pw%2b3GEybRIDkeA%3d&se=4694177373&skn=SendAccessPolicy
+
+
+Then I had to modify the script to match the ”Southbound Telemetry” and documentation can be found here http://docs.appiot.io/?page_id=43134.
+Python script for this test instance is attached. ( I have not used the Boolean part which maybe should be used for the door open and tilt)
+I will leave the DDM configuration as a reference to be used for anyone.
+
+Script output:
+$ ./post_sensor_data.py 
+ERROR: Require sensor data to post.
+Sensor data order: Temperature Temp_Max_value Temp_Min_value
+$ ./post_sensor_data.py 7.4 9.1 5.3
+Posted Temp_Max: {"bu":"default-unit","e":[{"n":"TestTruckDevice/3303/0/5602","u":"default-unit","v":9.1,"bv":null,"sv":null,"t":1538552832}]}
+Post Response Status: 201
+Posted Temp_Value: {"bu":"default-unit","e":[{"n":"TestTruckDevice/3303/0/5700","u":"default-unit","v":7.4,"bv":null,"sv":null,"t":1538552832}]}
+Post Response Status: 201
+Posted Temp_Min: {"bu":"default-unit","e":[{"n":"TestTruckDevice/3303/0/5601","u":"default-unit","v":5.3,"bv":null,"sv":null,"t":1538552833}]}
+Post Response Status: 201
+##############################################################

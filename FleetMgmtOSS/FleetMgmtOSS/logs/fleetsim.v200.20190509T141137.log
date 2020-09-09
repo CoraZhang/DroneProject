@@ -1,0 +1,52 @@
+==============================================================================
+fleetsim.v200.pl v2.00a
+Command line: 
+Run Date/Time: 2019-05-09 14:11:37
+Running simulation.  Type 'Ctrl C' at anytime to end simulation.
+Reading truck route info ...
+Reading warehouse info...
+Warehouse Name: Quidi Vidi Brewery; Lat: 47.58136; Long: -52.67638
+Resetting all trucks...
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Reading sensor config file...
+Reading AppIoT config file...
+Logging in to AppIoT gateway cbb4fa1d-7670-4c57-a94e-e7fb0d1bcfdf
+Simulation starts in:
+5 seconds...
+4 seconds...
+3 seconds...
+2 seconds...
+1 seconds...
+4 Trucks are on the way!
+Truck data will update every 5 seconds for a maximum of 3600 seconds (~720 samples/truck)...
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Truck : 47.58136,-52.67638; Accident=0; Door=0; TempC=20.0
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=0
+Truck : 47.58163,-52.67781; Accident=0; Door=0; TempC=20.0
+Truck : 47.58146,-52.67653; Accident=0; Door=0; TempC=20.0
+Truck : 47.58146,-52.67653; Accident=0; Door=0; TempC=20.0
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+Truck : 47.58158,-52.67874; Accident=0; Door=0; TempC=0
+Truck : 47.58158,-52.67874; Accident=0; Door=0; TempC=20.0
+Truck : 47.58155,-52.67675; Accident=0; Door=0; TempC=20.0
+Truck : 47.58155,-52.67675; Accident=0; Door=0; TempC=20.0
+Warning: Sensor Accident not defined.
+Warning: Sensor Door not defined.
+Warning: Sensor Temperature not defined.
+Truck : 47.58312,-52.67874; Accident=0; Door=0; TempC=0
+Truck : 47.58135,-52.67971; Accident=0; Door=0; TempC=20.8
+Truck : 47.58160,-52.67696; Accident=0; Door=0; TempC=20.0
+Truck : 47.58160,-52.67696; Accident=0; Door=0; TempC=20.0

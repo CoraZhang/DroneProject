@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CAT-M Demo : Fleet Management</title>
+
+    <!-- amCharts scripts-->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+
+    <!-- Google Maps API -->
+	<!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-anwVj1mTL6z0-Y6EVx0Ii-JxTuuCxc8"></script>
+    -->
+	
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+    
+    <!-- MapBox -->
+    <script src="https://cdn.klokantech.com/mapbox-gl-js/v0.43.0/mapbox-gl.js"></script>
+    <script src="https://cdn.klokantech.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script> 
+    <link rel="stylesheet" href="https://cdn.klokantech.com/mapbox-gl-js/v0.43.0/mapbox-gl.css" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Custom amCharts css -->
+    <link href="css/fsCharts.css" rel="stylesheet">
+    <link href="css/dsCharts.css" rel="stylesheet">
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- style sheets for maps infowindows etc. -->
+    <link href="css/fleetMgmt.css" rel="stylesheet">
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- amCharts javascript -->
+
+    <script src="js/fsCharts.js"></script> <!-- fleet status pie chart -->
+    <script src="js/dsCharts.js"></script> <!-- delivery status pie chart -->
+    <script src="js/collapse.js"></script>
+
+    <!-- Javascript routines for creating the contents of the map_div panel -->
+    <script src="js/fleetMgmt.js"></script>
+</head>
+
+<body>
+    <script>
+        $(function() {
+            $("sidebar-nav").click(function() {
+                // remove classes from all
+                $("li").removeClass("active");
+                // add class to the one we clicked
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+    <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <!-- Ericsson logo here -->
+            
+            <ul class="sidebar-nav">
+                <li>    
+                    <a href="http://www.ericsson.com" title="Ericsson.com" target="_blank"><img src="images/EricssonLogo.png" title="Ericsson" class="scale" style="width: 15%; height: 10%"></a>
+                </li>
+                
+                <li>
+                    <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars" style="font-size:25px;" aria-hidden="true"></i></a>
+                </li>
+                
+                <li class="active" id="FleetStatusMenuItem">
+                    <span style="font-size: 0.75">
+                    <i class="fa fa-tachometer" style="font-size:25px; color:#3ab534;" aria-hidden="true" 
+                      title="Fleet Status dashboard" onClick="showFleetStatus();"></i>
+                      &nbsp;&nbsp;&nbsp;Fleet Status Dashboard
+                    </span>
+                </li>
+                            
+                <li id="Telemetrics0MenuItem">
+                    <span style="font-size: 0.75">
+                    <img class="scale" id="Telemetrics0MenuImage" src="images/TruckGreen.png" style="width:20%; height: 10%" 
+                      title="Truck 0 telemetrics" onClick="showTelemetrics(0);">Truck 0
+                    </span>
+                </li>
+                    
+                <li id="Telemetrics1MenuItem">
+                    <span style="font-size: 0.75">
+                    <img class="scale" id="Telemetrics1MenuImage" src="images/TruckGrey.png" style="width:20%; height: 10%" 
+                      title="Truck 1 telemetrics" onClick="showTelemetrics(1);">Truck 1
+                    </span>
+                </li>
+                    
+                <li id="Telemetrics2MenuItem">
+                    <span style="font-size: 0.75">
+                    <img class="scale" id="Telemetrics2MenuImage" src="images/TruckGrey.png" style="width:20%; height: 10%" 
+                      title="Truck 2 telemetrics" onClick="showTelemetrics(2);">Truck 2
+                    </span>
+                </li>
+ 
+                <li id="Telemetrics3MenuItem">
+                    <span style="font-size: 0.75">
+                    <img class="scale" id="Telemetrics3MenuImage" src="images/TruckGrey.png" style="width:20%; height: 10%" 
+                      title="Truck 3 telemetrics" onClick="showTelemetrics(3);">Truck 3                    
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-wrapper">
+
+          <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+
+              <!-- info panel -->
+              <div class="col-lg-4">
+  
+                <!-- fleet status -->
+                <div class="panel panel-default" id="FleetStatus">
+                  <div class="panel-heading">
+                    <h3 class="paneltitle"> <i class="fa fa-wpforms" aria-hidden="true"></i> FLEET VEHICLE STATUS </h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </div>
+                  <div class="panel-body">
+                    <!-- pie charts -->
+                    <div id="chartdiv"></div>
+                    <div id="chartdiv1"></div>
+                  </div>
+                </div>
+
+                <!-- truck 0 telemetrics -->
+                <div class="panel panel-default" id="Telemetrics0" hidden=true>
+                  <div class="panel-heading" id="TelemetricsHeading0">
+                    <h3 class="paneltitle"> <i class="fa fa-wpforms" aria-hidden="true"></i> TELEMETRICS </h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </div>
+                  <div class="panel-body" id="TelemetricsBody0">
+                    <p>Hi there.  Welcome to Telemetrics for Truck 0.</p>
+                  </div>
+                </div>
+
+                <!-- truck 1 telemetrics -->
+                <div class="panel panel-default" id="Telemetrics1" hidden=true>
+                  <div class="panel-heading" id="TelemetricsHeading1">
+                    <h3 class="paneltitle"> <i class="fa fa-wpforms" aria-hidden="true"></i> TELEMETRICS </h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </div>
+                  <div class="panel-body" id="TelemetricsBody1">
+                    <p>Hi there.  Welcome to Telemetrics for Truck 1.</p>
+                  </div>
+                </div>
+                
+                <!-- truck 2 telemetrics -->
+                <div class="panel panel-default" id="Telemetrics2" hidden=true>
+                  <div class="panel-heading" id="TelemetricsHeading2">
+                    <h3 class="paneltitle"> <i class="fa fa-wpforms" aria-hidden="true"></i> TELEMETRICS </h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </div>
+                  <div class="panel-body" id="TelemetricsBody2">
+                    <p>Hi there.  Welcome to Telemetrics for Truck 2.</p>
+                  </div>
+                </div>
+                
+                <!-- truck 3 telemetrics -->
+                <div class="panel panel-default" id="Telemetrics3" hidden=true>
+                  <div class="panel-heading" id="TelemetricsHeading3">
+                    <h3 class="paneltitle"> <i class="fa fa-wpforms" aria-hidden="true"></i> TELEMETRICS </h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </div>
+                  <div class="panel-body" id="TelemetricsBody3">
+                    <p>Hi there.  Welcome to Telemetrics for Truck 3.</p>
+                  </div>
+                </div>
+                
+              </div>
+    
+              <!-- map panel -->
+              <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="paneltitle"><i class="glyphicon glyphicon-map-marker"></i> INTERACTIVE MAP </h3>
+                  </div>
+                  <div class="panel-body">
+                    <div id="map_div"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+
+          </div>
+          <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    <script type="text/javascript">
+      drawMap();
+    </script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
